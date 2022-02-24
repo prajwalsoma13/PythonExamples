@@ -18,10 +18,7 @@ def getValues(dic):
                     TotalValue = TotalValue + variable[key]
                     variable[key] = None
 
-                elif isinstance(variable[key], list):
-                    variable = variable[key]
-
-                elif isinstance(variable[key], dict):
+                elif isinstance(variable[key], list) or isinstance(variable[key], dict):
                     variable = variable[key]
 
         elif isinstance(variable, list):
